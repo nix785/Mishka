@@ -1,0 +1,111 @@
+.about {
+  .container;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.about__header {
+  width: auto;
+  text-align: left;
+  font-size: 18px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.about__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.about__item {
+  width: auto;
+  min-height: 90px;
+  margin-bottom: 10px;
+}
+
+.about__text {
+  width: auto;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 17px;
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+    padding-top: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+
+  .about__header {
+    width: 668px;
+    font-size: 28px;
+    line-height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .about__wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .about__item {
+    width: 334px;
+    margin-bottom: 40px;
+  }
+
+  .about__item--flover {
+    order: -1;
+  }
+
+  .about__item--ball {
+    order: -1;
+  }
+
+  .about__item--heart {
+    order: 1;
+  }
+
+  .about__item--money {
+    order: 0;
+  }
+
+  .about__item--gift {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    width: 875px;
+    padding-left: 225px;
+    margin-bottom: 0;
+  }
+
+  .about__header {
+    margin-bottom: 0;
+    font-size: 35px;
+  }
+
+  .about__header h2 {
+    margin-top: 45px;
+    margin-bottom: 55px;
+  }
+
+  .about__item {
+    width: 350px;
+    font-size: 36px;
+    margin-bottom: 47px;
+  }
+
+  .about__text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.header__logo-image {
+  width: 90px;
+  height: 40px;
+}
+
+.header__logo-image:hover {
+  opacity: 0.5;
+}
+
+.header__logo-image:active {
+  opacity: 0.2;
+}
+
+@media (min-width: @tablet-width) {
+  .header__logo-image {
+    width: 110px;
+    height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__logo-image {
+    width: 150px;
+    height: 75px;
+  }
+}

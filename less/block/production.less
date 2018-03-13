@@ -1,0 +1,214 @@
+.production {
+  .container;
+  margin-bottom: 58px;
+}
+
+.production__header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid @gray;
+  border-bottom: none;
+  padding: 0 33px;
+  min-height: 94px;
+}
+
+.prodiction__wrapper-img {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 150px;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .prodiction__wrapper-img {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+}
+
+.production__button {
+  width: 100px;
+  height: 80px;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+}
+
+.production__button:hover {
+  width: 120px;
+  height: 96px;
+}
+
+.production__button:active {
+  width: 80px;
+  height: 64px;
+  opacity: 0.8;
+}
+
+.production__title {
+  margin-left: 25px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.production__wrapper {
+  margin-top: -9px;
+  padding: 35px;
+  padding-bottom: 39px;
+  border: 2px solid @gray;
+  border-top: none;
+}
+
+.production__wrapper:hover {
+  box-shadow: 0 5px 9px -3px rgba(0, 0, 0, 0.5);
+}
+
+.production__wrapper:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+
+.production__discription {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .production {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+  }
+
+  .production__header {
+    height: 250px;
+    padding-top: 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -10px;
+    border-top: none;
+  }
+
+  .production__wrapper {
+    margin-top: -206px;
+    z-index: -1;
+  }
+
+  .production__wrapper:hover {
+    box-shadow: none;
+  }
+
+
+  .production__wrapper:active {
+    box-shadow: none;
+  }
+
+  .production__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 5px;
+  }
+
+  .production__title br {
+    display: none;
+  }
+
+  .production__discription {
+    line-height: 30px;
+  }
+
+  .prodiction__wrapper-img {
+    order: -1;
+    width: 668px;
+    height: 455px;
+    background-image: url("../img/video-tablet@1x.jpg");
+  }
+
+  @media only screen and (min-resolution: 192dpi) {
+    .prodiction__wrapper-img {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
+  }
+
+  .production__video {
+    width: 668px;
+    height: 455px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .production {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .production__header {
+    width: 246px;
+    margin-top: 0;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 47px;
+    height: 402px;
+    border-bottom: 2px solid @gray;
+    border-top: 2px solid @gray;
+    z-index: 4;
+  }
+
+  .production__title {
+    width: auto;
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .production__title br {
+    display: block;
+  }
+
+  .prodiction__wrapper-img {
+    width: 680px;
+    height: 455px;
+    background-image: url("../img/video-desktop@1x.jpg");
+  }
+
+  @media only screen and (min-resolution: 192dpi) {
+    .prodiction__wrapper-img {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
+  }
+
+  .production__wrapper {
+    margin-left: auto;
+    width: 230px;
+    margin-right: 28px;
+    border: none;
+    background-color: transparent;
+    padding: 0 60px;
+    padding-bottom: 50px;
+    margin-top: -260px;
+    height: 200px;
+    z-index: 5;
+  }
+
+  .production__header:hover {
+    box-shadow: 5px 0 9px -3px rgba(0, 0, 0, 0.5);
+  }
+
+  .production__header:active {
+    box-shadow: 5px 0 5px -3px rgba(0, 0, 0, 0.5);
+  }
+}

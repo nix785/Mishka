@@ -1,0 +1,148 @@
+.catalog {
+  .container;
+  margin-bottom: 38px;
+}
+
+.catalog__item {
+  min-height: 374px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.catalog__img {
+  width: 260px;
+  height: 195px;
+}
+
+.catalog__item-wrapper {
+  width: auto;
+  margin-top: -9px;
+  margin-bottom: 30px;
+  padding: 0 28px;
+  padding-top: 28px;
+  border: 2px solid @gray;
+}
+
+.catalog__item:hover .catalog__item-wrapper {
+  box-shadow: 0 5px 9px -3px rgba(0, 0, 0, 0.5);
+}
+
+.catalog__item:active .catalog__item-wrapper {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+.catalog__item-title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__item-title:hover {
+  color: #8d8d8d;
+}
+
+.catalog__item-title:active {
+  color: #cacaca;
+}
+
+.catalog__discription {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 30px;
+  margin-bottom: 29px;
+}
+
+.catalog__price {
+  border-top: 1px solid @gray;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.catalog__btn-cart {
+  border: none;
+  background-color: transparent;
+}
+
+.catalog__btn-cart:hover {
+  fill: #63d1bb;
+}
+
+.catalog__btn-cart:active {
+  fill: #d0f1ea;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .catalog__item-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 274px;
+    height: 302px;
+    margin: 0;
+  }
+
+  .catalog__discription {
+    margin: 0;
+  }
+
+  .catalog__item:hover .catalog__item-wrapper {
+    box-shadow: 5px 0 9px -3px rgba(0, 0, 0, 0.5);
+  }
+
+  .catalog__item:active .catalog__item-wrapper {
+    box-shadow: 5px 0 5px -3px rgba(0, 0, 0, 0.5);
+  }
+
+  .catalog__price {
+    width: auto;
+    margin-top: auto;
+  }
+
+  .catalog__img {
+    width: 334px;
+    height: 334px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  .catalog__item {
+    flex-direction: column;
+  }
+
+  .catalog__item-wrapper {
+    width: 260px;
+    height: 164px;
+    margin-top: -10px;
+  }
+
+  .catalog__item:hover .catalog__item-wrapper {
+    box-shadow: 0 5px 9px -3px rgba(0, 0, 0, 0.5);
+  }
+
+  .catalog__item:active .catalog__item-wrapper {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.5);
+  }
+
+  .catalog__img {
+    width: 320px;
+    height: 460px;
+  }
+}
